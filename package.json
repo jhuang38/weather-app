@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A weather app with OpenWeatherMap API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhuang38/weather-app.git"
+  },
+  "author": "James Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhuang38/weather-app/issues"
+  },
+  "homepage": "https://github.com/jhuang38/weather-app#readme",
+  "dependencies": {
+    "webpack": "^5.66.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}
