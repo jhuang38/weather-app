@@ -26,7 +26,7 @@ locationSubmit.addEventListener('submit', async (event) => {
 
     // just pass on the case that the user is stupid and enters weird value
     if (location != 'error') {
-        updateUI(location.name, location.sys.country, location.main.temp, location.weather[0].description, location.main.humidity, location.wind.speed);
+        updateUI(location.name, location.sys.country, location.main.temp, location.weather[0].description, location.wind.speed, location.main.humidity);
     }
     
 });
