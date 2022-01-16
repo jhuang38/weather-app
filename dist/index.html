@@ -7,11 +7,27 @@
         <script src = "./main.js" defer></script>
     </head>
     <body>
-        <h1>Weather App</h1>
-        <form autocomplete='off' >
-            <label for="city">Location</label>
-            <input type='text' name ='city' id = 'city'>
+        <form id = 'input'>
+            <input type='text' name ='location' id = 'location' placeholder = 'Location'>
             <input type = 'submit' id = 'submit' value = "Submit">
         </form>
+        <div id = 'display'>
+            <div id = 'locationInfo'>
+               <h2 id = 'locationDisplay'></h2> 
+            </div>
+            <div id = 'weatherInfo'>
+                <!--left container will contain the main temperature tab-->
+                <div id = 'left-container'>
+                    <h3 id = 'tempDisplay'></h3>
+                <!--right container will contain the main weather, humidity, -->
+                </div>
+                <div id = 'right-container'>
+                    <h3 id = 'weatherDescDisplay'></h4>
+                    <h3 id = 'windSpeedDisplay'></h4>
+                    <h3 id = 'humidityDisplay'></h4>
+                </div>
+            </div>
+            
+        </div>
     </body>
 </html>
