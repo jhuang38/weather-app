@@ -1,21 +1,68 @@
 @font-face {
-    font-family: 'Carme';
-    src: url('Carme-Regular.ttf');
+    font-family: 'sans-light';
+    src: url('Open_Sans/static/OpenSans/OpenSans-Light.ttf');
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 100px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    font-family: 'Carme';
+    font-family: 'sans-light';
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
-input {
-    padding: 8px;
-    border-radius: 5px;
+#display {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+#mainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 64px;
+    background-image: url('./img/background-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#mainInfo img {
+    height: 5vh;
+    width: auto;
+}
+
+#locationDisplay {
+    font-size: 48px;
+}
+
+#tempDisplay {
+    display: flex;
+    font-size: 96px;
+}
+
+
+#localTime {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    font-size: 48px;
 }
 
 #weatherInfo {
@@ -25,11 +72,35 @@ input {
     gap: 32px;
 }
 
-#left-container {
+#left-container, #right-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 24px;
 }
 
+#right-container {
+    align-items: center;
+}
+
+#windContainer, #humidityContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+/* for input */
+#inputFields {
+    border: 1px solid rgb(239, 239, 239);
+}
+input {
+    padding: 8px;
+    border: 0;
+}
+#location, #submit {
+    padding: 16px;
+    font-size: 16px;
+    border: 0;
+}
 
