@@ -49,16 +49,16 @@ body {
 }
 
 #locationDisplay {
-    font-size: 48px;
+    font-size: 72px;
 }
 
 #tempDisplay {
     display: flex;
-    font-size: 96px;
+    font-size: 144px;
 }
 
 
-#localTime {
+#localTimeDisplay {
     display: flex;
     justify-content: center;
     justify-content: center;
