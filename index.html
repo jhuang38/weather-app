@@ -5,29 +5,40 @@
         <title>Weather</title>
         <meta charset = 'utf-8'>
         <script src = "./main.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <form id = 'input'>
-            <input type='text' name ='location' id = 'location' placeholder = 'Location'>
-            <input type = 'submit' id = 'submit' value = "Submit">
-        </form>
         <div id = 'display'>
-            <div id = 'locationInfo'>
-               <h2 id = 'locationDisplay'></h2> 
+            <div id = 'mainInfo'>
+               <div id = 'locationDisplay'></div>
+               <img src = '../src/img/location_icon.png'>
+               <div id = 'tempDisplay'></div>
+               <div id = 'localTimeDisplay'></div>
             </div>
+            
             <div id = 'weatherInfo'>
-                <!--left container will contain the main temperature tab-->
+
                 <div id = 'left-container'>
-                    <h3 id = 'tempDisplay'></h3>
-                <!--right container will contain the main weather, humidity, -->
+                    <div id = 'humidityContainer'>
+                        <img id = 'dropLogo'>
+                        <div id = 'humidityDisplay'></div>
+                    </div>
+                    <div id = 'windContainer'>
+                        <img id = 'speedLogo'>
+                        <div id = 'windSpeedDisplay'></div>
+                    </div>
                 </div>
+                <img id = 'separator'>
                 <div id = 'right-container'>
-                    <h3 id = 'weatherDescDisplay'></h4>
-                    <h3 id = 'windSpeedDisplay'></h4>
-                    <h3 id = 'humidityDisplay'></h4>
+                    <div id = 'weatherMainDisplay'></div>
+                    <div id = 'weatherDescDisplay'></div>
                 </div>
             </div>
             
         </div>
+        <form id = 'inputFields'>
+            <input type='text' name ='location' id = 'location' placeholder = 'Location'>
+            <button type = 'submit' id = 'submit'><i class="fa fa-search"></i></button>
+        </form>
     </body>
 </html>
