@@ -1,5 +1,6 @@
 import waterLogo from './img/humidity-logo.png';
 import windSym from './img/windspeed-logo.png';
+import topLogo from './img/location_icon.png';
 
 export default function updateUI(city, country, temperature, weatherMain, weatherDesc, windSpeed, humidity, localTime) {
     // grab each element from the DOM
@@ -11,6 +12,10 @@ export default function updateUI(city, country, temperature, weatherMain, weathe
     const humidityDisplay = document.getElementById('humidityDisplay');
     const localTimeDisplay = document.getElementById('localTimeDisplay');
 
+    // add logo on top of page
+    const locationLogo = document.getElementById('topLogo');
+    locationLogo.src = topLogo;
+    
     // add logos for humidity and wind speed
     const humidityLogo = document.getElementById('dropLogo');
     humidityLogo.src = waterLogo;

@@ -3,6 +3,7 @@ import getWeatherDataJSON from './weatherAPIHandler.js';
 import updateUI from './uiHandler';
 //input jdkfsajk.timezone into getLocalTime function
 import getLocalTime from './getLocalTime.js';
+import websiteLogo from './img/website_logo.png';
 
 const initialValues = await getWeatherDataJSON('vancouver');
 const locationName = initialValues.name;
@@ -13,7 +14,9 @@ const descWeather = initialValues.weather[0].description;
 const humidityPercentage = initialValues.main.humidity;
 const windSpeed = initialValues.wind.speed;
 
-// console.log(initialValues);
+// set icon
+const webIcon = document.getElementById('icon');
+webIcon.href = websiteLogo;
 
 // update the UI
 updateUI(locationName, locationCountry, tempOverall, mainWeather, descWeather, windSpeed, humidityPercentage, getLocalTime(initialValues.timezone));
